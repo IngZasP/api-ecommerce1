@@ -1,0 +1,27 @@
+// CONSULTA DE TODOS  --- METODO GET
+localhost:3000/product/
+
+// ALTA --- METODO POST
+BODY JSON
+{
+    "name" : "SmartWatch",
+    "description" : "HUAWEI GT Cyber",
+    "imageURL" : "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/pc/matebook-d-16-2024/list/list-silver.png",
+    "pice" : 3000
+}
+localhost:3000/product/créate
+
+// CONSULTA UNICA POR ID --- METODO GET
+localhost:3000/product/6686d7c92c78b7eea8479e9f
+
+// DELETE POR ID --- METODO DELETE
+localhost:3000/product/delete?productID=6686d7c92c78b7eea8479e9f
+
+// UPDATE POR ID --- METODO PUT
+BODY JSON
+{
+    "description" : "HUAWEI D16",
+    "imageURL" : "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/pc/matebook-d-16-2024/list/list-silver.png",
+    "pice" : 13000
+}
+localhost:3000/product/update?productID=6686d8bdc29cfd85459b47b9
